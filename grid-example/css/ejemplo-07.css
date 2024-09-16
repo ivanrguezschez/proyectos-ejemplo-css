@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+
+    /* Especificar posición de las areas */
+    grid-template-areas: 
+        "header"
+        "izquierda"
+        "contenido" 
+        "derecha"
+        "footer";
+}
+
+main > * {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nombramos los elementos */
+header {
+    grid-area: header;
+}
+aside:first-of-type {
+    grid-area: izquierda;
+}
+article {
+    grid-area: contenido;
+}
+aside:last-of-type {
+    grid-area: derecha;
+}
+footer {
+    grid-area: footer;
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+    main {
+        grid-template-areas: 
+            "header header derecha"
+            "izquierda contenido derecha"
+            "footer footer derecha";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
+    }
+}

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+}
+
+main > * {
+    order: 1;
+}
+
+div {
+    background-color: goldenrod;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-child(4) {
+    background-color: purple;
+    color: white;
+    order: 1;
+}

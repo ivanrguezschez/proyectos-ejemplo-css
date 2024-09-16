@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Input Form -->
+      <section class="input-form">
+        <div id="input-day" class="input-form__box">
+          <p class="input-form__box__title">DAY</p>
+          <input type="number" class="input-form__box__input" />
+          <small class="input-form__box__error-message"></small>
+        </div>
+        <div id="input-month" class="input-form__box">
+          <p class="input-form__box__title">MONTH</p>
+          <input type="number" class="input-form__box__input" />
+          <small class="input-form__box__error-message"></small>
+        </div>
+        <div id="input-year" class="input-form__box">
+          <p class="input-form__box__title">YEAR</p>
+          <input type="number" class="input-form__box__input" />
+          <small class="input-form__box__error-message"></small>
+        </div>
+      </section>
+
+      <!-- Separator and Submit Button -->
+      <section class="separator">
+        <hr class="separator__line" />
+        <div class="separator__button">
+          <img src="assets/images/icon-arrow.svg" alt="Submit" class="separator__button__icon">
+        </div>
+      </section>
+
+      <!-- Result -->
+      <section class="results">
+        <div class="results__invalid">INVALID DATE</div>
+        <div class="results__valid">
+          <div class="result">
+            <span id="result-years" class="result__value">--</span> years
+          </div>
+          <div class="result">
+            <span id="result-months" class="result__value">--</span> months
+          </div>
+          <div class="result">
+            <span id="result-days" class="result__value">--</span> days
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

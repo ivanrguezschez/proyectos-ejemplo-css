@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    /*grid-template-columns: 1fr 2fr;*/
+    grid-template-columns: 
+        [sidebar-start] 1fr
+        [contenido-start] 3fr;
+    grid-template-rows: 
+        [header-start] 1fr
+        [contenido-start] 3fr
+        [footer-start] 1fr;
+}
+
+main > * {
+    font-family: sans-serif;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-column: sidebar-start / -1; /* -1 para que ocupe todas las columnas que haya */
+}
+
+footer {
+    grid-column: sidebar-start / -1; /* -1 para que ocupe todas las columnas que haya */
+}

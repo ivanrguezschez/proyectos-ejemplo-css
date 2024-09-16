@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid:
+        /* Filas / Columnas*/
+        auto-flow 10fr 5fr / 2fr 8fr
+    ;
+}
+
+div {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

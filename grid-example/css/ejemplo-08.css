@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 
+        /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+        /* repeat(8, 1fr); */
+        
+        /* 8 colunas con un mínimo y un máximo (limite) */
+        /*repeat(8, minmax(10px, 1fr));*/
+        
+        /* 8 colunas con un patron dos (30px y mínimo 10% y un máximo flexible */
+        /* repeat(4, 30px, minmax(10%, 1fr));*/
+
+        /* 8 colunas con un minimo marcado por el contenido y un máximo del 30% */
+        /*repeat(8, minmax(min-content, 30%));*/
+
+        /* 8 colunas con un máximo y minimo marcado por el contenido */
+        repeat(8, minmax(min-content, max-content));
+}
+div {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

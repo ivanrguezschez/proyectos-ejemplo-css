@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 
+        repeat(4, 50px) / repeat(3, 1fr)
+    ;
+    justify-items: start;
+}
+
+div {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

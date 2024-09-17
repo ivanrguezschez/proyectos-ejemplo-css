@@ -7,6 +7,9 @@ Proyecto de Frontend Mentor que calcula la edad en base a los datos introducidos
 ## blueprint-examples
 Proyecto de ejemplos del framework css blueprint.
 
+## bulma-example
+Proyecto de ejemplo del framework css bulma.
+
 ## flex-example
 Proyecto de ejemplos de display flex.
 

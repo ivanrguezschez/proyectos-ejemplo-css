@@ -7,8 +7,14 @@ Proyecto de Frontend Mentor que calcula la edad en base a los datos introducidos
 ## flex-example
 Proyecto de ejemplos de display flex.
 
+## general-examples
+Proyecto de ejemplos generales, emplea html y css.
+
 ## grid-example
 Proyecto de ejemplos de display grid.
 
 ## notifications-page
 Proyecto de Frontend Mentor de una página de notificaciones, emplea html y css.
+
+## tabla-datos-example
+Proyecto de ejemplo de tabla de datos, emplea html y css.

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Para evitar el cacheo de la pagina por parte del navegador -->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <title>Ejemplo de Paginación</title>
+    <link rel="stylesheet" type="text/css" href="css/tabla-datos.css" />
+  </head>
+  <body>
+    <h1>Listado de Contactos</h1>
+    <hr />
+    <h2>
+      Ejemplo de Paginacion propia ordenada por el campo sobre el que se hace
+      click
+    </h2>
+    <p>
+      Inicialmente la lista esta ordenada por nombre, apellido1 y apellido2,
+      luego se ordena en función del campo en el que el usuario a hecho click y
+      dicho campo sea ordenable.
+    </p>
+    <p></p>
+    <table class="tabla-datos" border="0" cellpadding="0" cellspacing="1">
+      <thead>
+        <tr>
+          <th width="50px" class="order1 sortable sorted">
+            <a
+              href="contactoListPagination.htm?sortType=ASC&sortProperty=idContacto"
+              >ID</a
+            >
+          </th>
+          <th width="150px" class="sortable sorted">
+            <a
+              href="contactoListPagination.htm?sortType=ASC&sortProperty=nombre"
+              >NOMBRE</a
+            >
+          </th>
+          <th width="250px" class="sortable sorted">
+            <a
+              href="contactoListPagination.htm?sortType=ASC&sortProperty=apellido1"
+              >PRIMER APELLIDO</a
+            >
+          </th>
+          <th width="250px">SEGUNDO APELLIDO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="even">
+          <td width="50px">9</td>
+          <td width="150px">Nombre-01</td>
+          <td width="250px">Apellido1-01</td>
+          <td width="250px">Apellido2-01</td>
+        </tr>
+        <tr class="odd">
+          <td width="50px">8</td>
+          <td width="150px">Nombre-02</td>
+          <td width="250px">Apellido1-02</td>
+          <td width="250px">Apellido2-02</td>
+        </tr>
+        <tr class="even">
+          <td width="50px">11</td>
+          <td width="150px">Nombre-03</td>
+          <td width="250px">Apellido1-03</td>
+          <td width="250px"></td>
+        </tr>
+        <tr class="odd">
+          <td width="50px">10</td>
+          <td width="150px">Nombre-04</td>
+          <td width="250px">Apellido1-04</td>
+          <td width="250px">Apellido2-04</td>
+        </tr>
+        <tr class="even">
+          <td width="50px">5</td>
+          <td width="150px">Nombre-05</td>
+          <td width="250px">Apellido1-05</td>
+          <td width="250px">Apellido2-05</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">
+            <div class="pagination">
+              <div class="pagination-sumary">
+                <ul class="sumary-export">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="img/file_extension_pdf.png"
+                        border="0"
+                        width="16"
+                        height="16"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="img/file_extension_xls.png"
+                        border="0"
+                        width="16"
+                        height="16"
+                    /></a>
+                  </li>
+                </ul>
+                <div class="sumary-text">Página 1 de 3 (12 registros)</div>
+              </div>
+              <ul class="navigation-pages">
+                <li class="disabled">|&lt;</li>
+                <li class="disabled">&lt;</li>
+                <li class="current">1</li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;|</a></li>
+              </ul>
+              <div style="clear: both"></div>
+            </div>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <a href="index.htm">Volver</a>
+  </body>
+</html>

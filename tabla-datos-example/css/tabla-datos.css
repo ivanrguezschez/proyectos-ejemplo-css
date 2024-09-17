@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+/* Tabla de datos */
+table.tabla-datos {
+    background-color: #cdcdcd;
+    font-size: 10pt;
+    border-collapse: inherit !important;
+    border-spacing: 1px !important;
+    border: none !important; 
+}
+table.tabla-datos thead tr th { 
+    padding: 5px;
+    background-color: #666666;
+    color: #FFFFFF;
+    text-align: center;
+}
+/* Sort */
+table.tabla-datos thead th.sorted a, table.tabla-datos thead th.sortable a {
+	text-decoration: none; 
+	background-position: right;
+	display: block;
+	width: 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF
+}
+table.tabla-datos thead th a:hover {
+	text-decoration: underline;
+}
+table.tabla-datos thead th.sortable a {
+    background-image: url(../img/arrow_off.png);
+}
+table.tabla-datos thead th.order1 a {
+    background-image: url(../img/arrow_down.png);
+}
+table.tabla-datos thead th.order2 a {
+    background-image: url(../img/arrow_up.png);
+}
+/* Sort FIN */
+table.tabla-datos tbody td {
+    padding: 4px 4px;
+    background-color: #fff;
+}
+table.tabla-datos tbody tr.odd td { 
+    background-color: #F0F0F6;
+}
+table.tabla-datos tbody tr.even td { 
+    background-color: #fff;
+}
+table.tabla-datos tbody tr.highlight td {
+    background-color: #FDF5D0;
+}
+table.tabla-datos tbody tr.selected td {
+    background-color: #FFF0A5;
+}
+table.tabla-datos tfoot th { 
+    padding: 0px;
+    background-color: #EEEEEE;
+    color: #1C94C4;
+}
+/* Paginacion */
+div.pagination {
+	padding: 4px;
+}
+div.pagination-sumary {
+	float:left;
+	padding: 0px;
+	margin: 0px;
+}
+div.pagination-sumary ul.sumary-export {
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
+	list-style-type: none;
+	float:left;
+}
+div.pagination-sumary ul.sumary-export img {
+	vertical-align: middle;
+	padding: 1px 0px;
+}
+div.pagination-sumary ul.sumary-export li {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+div.pagination-sumary ul.sumary-export a {
+	margin: 0px;
+	padding: 1px 0px;
+	text-decoration: none;
+}
+div.pagination-sumary div.sumary-text {
+	float:left;
+	margin: 0px;
+	padding: 1px 0px;
+}
+ul.navigation-pages {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px;
+	list-style-type: none;
+	float:right;
+}
+ul.navigation-pages li {
+	display: inline;
+}
+ul.navigation-pages li.disabled {
+   	margin: 0px;
+   	padding: 0px 4px;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+} 
+ul.navigation-pages li.current {
+	margin: 0px;
+   	padding: 0px 4px;
+    color: #C77405;
+    background-color: #fdf5dc;
+    font-weight: bold;
+    border: 1px solid #FBCB09;
+} 
+ul.navigation-pages li a {
+	margin: 0px;
+   	padding: 0px 4px;
+	text-decoration: none;
+	color: #1C94C4;
+	border: 1px solid #FBCB09;
+}
+ul.navigation-pages a:hover, ul.navigation-pages a:active {
+    color: #C77405;
+    background-color: #fdf5dc;
+    border: 1px solid #FBCB09;
+}
+/* Paginacion FIN */
+/* Tabla de datos FIN */
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blueprint-examples Pagina Buscar</title>
+    <link
+      rel="stylesheet"
+      href="css/screen.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 8
+      ]><link
+        rel="stylesheet"
+        href="css/ie.css"
+        type="text/css"
+        media="screen, projection"
+    /><![endif]-->
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container showgrid">
+      <div class="span-24">
+        <div id="divHeader">header</div>
+      </div>
+      <div class="span-24">
+        <div id="divMenu">
+          <ul id="menubar">
+            <li><a href="#">Item One</a></li>
+            <li><a href="#">Item Two</a></li>
+            <li><a href="#">Item Three</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="span-24">
+        <div id="divContenido">
+          <div id="breadbar" clas="span-24">
+            barra de opciones Inicio Volver Nuevo etc
+            <!--
+					<a href="" class="left">Inicio</a>
+					<a href="" class="right">Nuevo</a>
+					-->
+          </div>
+
+          <div class="span-22 prepend-1">
+            <div class="notice">
+              Zona de mensajes Entidad eliminada correctamente.
+            </div>
+          </div>
+
+          <div class="clear">
+            <form>
+              <fieldset>
+                <legend style="border: 1px solid black">
+                  Criterios de Busqueda
+                </legend>
+                <div style="border: 1px solid red">
+                  <label>Nombre:</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label>Primer Apellido:</label>
+                  <input type="text" />
+                </div>
+              </fieldset>
+              <div class="botoneraSearch">
+                <input type="button" value="Buscar" />
+                <input type="button" value="Limpiar" />
+              </div>
+            </form>
+          </div>
+
+          <fieldset>
+            <legend>Resultados de la Busqueda</legend>
+            <table style="border: 1px solid black">
+              <thead>
+                <tr>
+                  <th>Columna1</th>
+                  <th>Columna2</th>
+                  <th>Columna3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="3">
+                    <div>
+                      <div style="float: left">Registros 1-10 de 21</div>
+                      <div style="float: right">
+                        &lt;&lt;&nbsp;&lt;&nbsp;Página 1 de
+                        3&nbsp;&gt;&nbsp;&gt;&gt;
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+          </fieldset>
+        </div>
+      </div>
+      <div class="span-24">
+        <div id="divFooter">footer</div>
+      </div>
+    </div>
+  </body>
+</html>

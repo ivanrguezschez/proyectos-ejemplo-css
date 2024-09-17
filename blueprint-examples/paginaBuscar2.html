@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blueprint-examples Pagina Buscar</title>
+    <link
+      rel="stylesheet"
+      href="css/screen.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 8
+      ]><link
+        rel="stylesheet"
+        href="css/ie.css"
+        type="text/css"
+        media="screen, projection"
+    /><![endif]-->
+
+    <style type="text/css">
+      #header {
+        background-color: #cc0000;
+        height: 50px;
+      }
+      #footer {
+        background-color: #cccc00;
+        padding: 5px 0px;
+        margin-top: 20px;
+      }
+      #footer p {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+      }
+      #menu {
+        background-color: #cccccc;
+      }
+      #breadbar {
+        background-color: #cccccc;
+        margin-bottom: 20px;
+      }
+      #breadbar a.left {
+        float: left;
+      }
+      #breadbar a.right {
+        float: right;
+      }
+
+      #contenido {
+        /*background-color: #DDDDDD;*/
+        padding-bottom: 10px;
+      }
+
+      #contenido form {
+        margin: 0px;
+        padding: 0px;
+      }
+      #contenido fieldset {
+        margin: 0px 10px;
+      }
+      #contenido div.botoneraSearch {
+        text-align: right;
+        margin: 0px 10px;
+      }
+
+      #contenido table.datos {
+        margin: 0px 0px;
+        padding: 0px;
+        /*border: 1px solid black;*/
+      }
+      #contenido table.datos tfoot tr th {
+        /*background-color: #FF0000;*/
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container showgrid">
+      <div id="header">
+        <p>header</p>
+      </div>
+      <div id="menu">
+        <p>menu</p>
+      </div>
+
+      <div id="breadbar" class="clearfix">
+        <a href="" class="left">Inicio</a>
+        <a href="" class="right">Nuevo</a>
+      </div>
+
+      <div id="contenido" class="span-24">
+        <div class="span-22 prepend-1">
+          <div class="notice">Entidad eliminada correctamente.</div>
+        </div>
+
+        <div class="span-24">
+          <form class="inline">
+            <fieldset>
+              <legend>Criterios de Busqueda</legend>
+              <div class="span-10">
+                <div class="clearfix">
+                  <label class="span-3">Nombre:</label>
+                  <input type="text" class="span-7" />
+                </div>
+                <div class="clearfix">
+                  <label class="span-3">Primer Apellido:</label>
+                  <input type="text" class="span-7" />
+                </div>
+              </div>
+              <div class="span-10 prepend-2 last">
+                <div class="clearfix">
+                  <label class="span-3">Segundo Apellido:</label>
+                  <input type="text" class="span-7" />
+                </div>
+                <div class="clearfix">
+                  <label class="span-3">Fecha Nacimiento:</label>
+                  <input type="text" class="span-3" />
+                </div>
+              </div>
+            </fieldset>
+            <div class="botoneraSearch">
+              <input type="button" value="Buscar" />
+              <input type="button" value="Limpiar" />
+            </div>
+          </form>
+        </div>
+        <div class="span-24">
+          <fieldset>
+            <legend>Resultado de la Busqueda</legend>
+            <table class="datos">
+              <thead>
+                <tr>
+                  <th>Columna1</th>
+                  <th>Columna2</th>
+                  <th>Columna3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+                <tr>
+                  <td>Valor1</td>
+                  <td>Valor2</td>
+                  <td>Valor3</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="3">
+                    <div>
+                      <div style="float: left">Records 1-10 of 21</div>
+                      <div style="float: right">
+                        &lt;&lt;&nbsp;&lt;&nbsp;Page 1 of
+                        3&nbsp;&gt;&nbsp;&gt;&gt;
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+          </fieldset>
+        </div>
+      </div>
+
+      <div id="footer" class="span-24">
+        <p>footer</p>
+      </div>
+    </div>
+  </body>
+</html>

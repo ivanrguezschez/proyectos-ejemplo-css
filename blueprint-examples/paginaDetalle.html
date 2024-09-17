@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blueprint-examples Pagina Detalle</title>
+    <link
+      rel="stylesheet"
+      href="css/screen.css"
+      type="text/css"
+      media="screen, projection"
+    />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 8
+      ]><link
+        rel="stylesheet"
+        href="css/ie.css"
+        type="text/css"
+        media="screen, projection"
+    /><![endif]-->
+
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container showgrid">
+      <div class="span-24">
+        <div id="divHeader">header</div>
+      </div>
+      <div class="span-24">
+        <div id="divMenu">
+          <ul id="menubar">
+            <li><a href="#">Item One</a></li>
+            <li><a href="#">Item Two</a></li>
+            <li><a href="#">Item Three</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="span-24">
+        <div id="divContenido">
+          <div id="breadbar" clas="span-24">
+            barra de opciones Inicio Volver Nuevo etc
+            <!--
+					<a href="" class="left">Inicio</a>
+					<a href="" class="right">Nuevo</a>
+					-->
+          </div>
+
+          <div class="span-22 prepend-1">
+            <div class="notice">
+              Zona de mensajes Entidad actualizada correctamente.
+            </div>
+          </div>
+
+          <div class="clear">
+            <form>
+              <fieldset>
+                <legend style="border: 1px solid black">
+                  Detalle del Registro
+                </legend>
+                <div style="border: 1px solid red">
+                  <label>Nombre:</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label>Primer Apellido:</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label>Segundo Apellido:</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label>Fecha de Nacimiento:</label>
+                  <input type="text" />
+                </div>
+              </fieldset>
+              <div class="botoneraEdit">
+                <input type="button" value="Aceptar" />
+                <input type="button" value="Limpiar" />
+                <input type="button" value="Cancelar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="span-24">
+        <div id="divFooter">footer</div>
+      </div>
+    </div>
+  </body>
+</html>

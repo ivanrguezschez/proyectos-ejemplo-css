@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Float</title>
+    <style type="text/css">
+      div.container {
+        border: 1px solid #000000;
+      }
+      div.left {
+        width: 45%;
+        float: left;
+      }
+      div.right {
+        width: 45%;
+        float: right;
+      }
+      div.clear {
+        clear: both;
+      }
+      div.container2 {
+        border: 1px solid #000000;
+        overflow: hidden;
+        width: 100%;
+      }
+      div.left2 {
+        width: 45%;
+        float: left;
+      }
+      div.right2 {
+        width: 45%;
+        float: right;
+      }
+
+      ul#navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5em 0;
+        border-top: 1px solid #666;
+      }
+      ul#navigation li a {
+        display: block;
+        width: 5em;
+        color: #fff;
+        background-color: #036;
+        padding: 0.2em 0;
+        text-align: center;
+        text-decoration: none;
+      }
+      ul#navigation li a:hover {
+        color: #fff;
+        background-color: #69c;
+      }
+      ul#navigation .left {
+        float: left;
+      }
+      ul#navigation .right {
+        float: right;
+      }
+
+      ul#navlist {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100%;
+        color: #fff;
+        background-color: #036;
+      }
+      ul#navlist li {
+        display: inline;
+      }
+      ul#navlist li a {
+        float: left;
+        width: 5em;
+        padding: 0.2em 1em;
+        color: #fff;
+        background-color: #036;
+        text-decoration: none;
+        border-right: 1px solid #fff;
+        text-align: center;
+      }
+      ul#navlist li a:hover {
+        color: #fff;
+        background-color: #369;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Old Solution</h1>
+    <div class="container">
+      <div class="left">
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.
+      </div>
+      <div class="right">
+        The right column.<br />
+        The right column.<br />
+        The right column.
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <hr />
+
+    <h1>New Solution</h1>
+    <div class="container2">
+      <div class="left2">
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.<br />
+        The left column.
+      </div>
+      <div class="right2">
+        The right column.<br />
+        The right column.<br />
+        The right column.
+      </div>
+    </div>
+
+    <hr />
+
+    <h1>Next and Back Button Example</h1>
+    <ul id="navigation">
+      <li class="left"><a href="#">Back</a></li>
+      <li class="right"><a href="#">Next</a></li>
+    </ul>
+
+    <h1>Inline List Items Example</h1>
+    <ul id="navlist">
+      <li><a href="#">Item One</a></li>
+      <li><a href="#">Item Two</a></li>
+      <li><a href="#">Item Three</a></li>
+    </ul>
+  </body>
+</html>

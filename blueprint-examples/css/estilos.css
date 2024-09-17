@@ -1,0 +1,57 @@
+#divHeader {
+	border: 1px solid red;
+	height: 50px;
+}
+#divMenu {
+	border: 1px solid black;
+	padding: 5px;
+}
+#divContenido {
+	border: 1px solid blue;
+	margin: 20px 0px;
+}
+#divFooter {
+	border: 1px solid green;
+	padding: 5px 10px;
+}
+
+ul#menubar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+ul#menubar li {
+	display: inline;
+	padding: 5px 0px;
+}
+ul#menubar li a {
+	/*float: left;*/
+	width: 5em;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+ul#menubar li a:hover {
+	color: #fff;
+	background-color: #369;
+}
+#divContenido fieldset {
+	margin: 0px 10px;
+	padding: 0px 5px;
+}
+#breadbar {
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+}
+
+div.botoneraSearch {
+	text-align: right;
+	margin: 5px 10px 10px 10px;
+}
+div.botoneraEdit {
+	text-align: right;
+	margin: 5px 10px 10px 10px;
+}

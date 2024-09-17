@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style type="text/css">
+      #inline-list {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Trebuchet MS";
+        font-size: 12px;
+        font-weight: bold;
+      }
+      #inline-list ul {
+        border-width: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+      #inline-list li {
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        float: left;
+        border-right: 1px solid #fff;
+      }
+      #inline-list li a {
+        padding: 0px 10px;
+        display: block;
+        background-color: #dfdfdf;
+        margin: 0px 0px 0px;
+        /*width:100px;*/
+        text-decoration: none;
+        color: #990000;
+      }
+      #inline-list li a:hover {
+        background-color: #990000;
+        color: #fff;
+      }
+      #inline-list li.first {
+        background: url(img/sup_izq.gif) top left no-repeat;
+        background-color: #990000;
+        border-right: 1px solid #fff;
+      }
+      #inline-list li.first .bottom {
+        background: url(img/left_bottom.gif) bottom left no-repeat;
+        padding: 0px 7px 0px 0px;
+      }
+      #inline-list li.last {
+        background: url(img/sup_der.gif) top right no-repeat;
+        background-color: #990000;
+      }
+      #inline-list li.last .bottom {
+        background: url(img/right_bottom.gif) bottom right no-repeat;
+        padding: 0px 0px 0px 7px;
+        border-right-width: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="inline-list">
+      <ul>
+        <li class="first"><span class="bottom">&nbsp;</span></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Hidden Cameras</a></li>
+        <li><a href="#">CCTV Cameras</a></li>
+        <li><a href="#">Employee Theft</a></li>
+        <li><a href="#">Helpful Hints</a></li>
+        <li class="last"><span class="bottom">&nbsp;</span></li>
+      </ul>
+    </div>
+  </body>
+</html>

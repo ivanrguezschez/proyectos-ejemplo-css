@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensajes</title>
+    <style type="text/css">
+      .infoMacro {
+        border: #3c78b5 1px solid;
+        margin: 5px 0px 5px 0px;
+        background-color: #d8e4f1;
+        text-align: left;
+        font-family: Verdana, arial, sans-serif;
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .tipMacro {
+        border: #090 1px solid;
+        margin: 5px 0px 5px 0px;
+        background-color: #dfd;
+        text-align: left;
+        font-family: Verdana, arial, sans-serif;
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .warningMacro {
+        border: #f0c000 1px solid;
+        margin: 5px 0px 5px 0px;
+        background-color: #ffffce;
+        text-align: left;
+        font-family: Verdana, arial, sans-serif;
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .errorMacro {
+        border: #c00 1px solid;
+        margin: 5px 0px 5px 0px;
+        background-color: #fcc;
+        text-align: left;
+        font-family: Verdana, arial, sans-serif;
+        font-size: 11px;
+        line-height: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="infoMacro" cellspacing="8" cellpadding="5" width="85%" align="center" border="0">
+      <tr>
+        <td valign="top" width="24">
+          <img src="img/information.gif" width="16" height="16" align="absMiddle" border="0" />
+        </td>
+        <td>
+          <b>Useful Information (Mensaje Informativo)</b><br />
+          <p>
+            This document is relevant only to the Pentaho BI Platform version
+            1.2.0 or earlier. See the
+            <a href="#"
+              >Pentaho BI Platform version 1.2.1 or later security
+              documentation</a
+            >
+            if you're using version 1.2.1 or later. (You can find the version
+            you are running in several ways: (1) look at the log when the
+            Pentaho BI Platform starts or (2) look at the bottom right of any
+            page within the Pentaho BI Platform.)
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table class="tipMacro" cellspacing="8" cellpadding="5" width="85%" align="center" border="0">
+      <tr>
+        <td valign="top" width="24">
+          <img src="img/check.gif" width="16" height="16" align="absMiddle" border="0" />
+        </td>
+        <td>
+          <b>Handy Hint (Question) (Mensaje)</b><br />
+          <p>
+            This class will be removed in a future version (1.6) of the Pentaho
+            Professional BI Platform. It will be replaced by
+            <tt><span class="error">[FilterSecurityInterceptor]</span></tt>
+            which will require explicit mappings between pages and roles
+            required to access those pages. If you wish to use
+            <tt>FilterSecurityInterceptor</tt> today, you may do so according to
+            the Acegi Security documentation.
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table class="warningMacro" cellspacing="8" cellpadding="5" width="85%" align="center" border="0">
+      <tr>
+        <td valign="top" width="24">
+          <img src="img/warning.gif" width="16" height="16" align="absMiddle" border="0" />
+        </td>
+        <td>
+          <b>Warning Be Careful (Advertencia)</b><br />
+          <p>
+            Be sure to add <tt>as username</tt> and
+            <tt>as authorities</tt> where appropriate in your queries.
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table class="errorMacro" cellspacing="8" cellpadding="5" width="85%" align="center" border="0">
+      <tr>
+        <td valign="top" width="24">
+          <img src="img/error.gif" width="16" height="16" align="absMiddle" border="0" />
+        </td>
+        <td>
+          <b>Error (Error)</b><br />
+          <p>
+            Note that the backslashes that occur in the below XML excerpt are
+            present for formatting purposes only and should not be present in
+            the actual XML file.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <img src="img/wait.gif" align="absMiddle" border="0" />
+  </body>
+</html>

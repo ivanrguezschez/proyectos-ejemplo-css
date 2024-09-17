@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de Botoneras</title>
+    <style type="text/css">
+      div.botonera {
+        margin-top: 10px;
+        padding-top: 5px;
+        border-top: 1px solid #cacaca;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      div.botonera div.botonera-left {
+        border: 1px solid red;
+        float: left;
+      }
+      div.botonera div.botonera-right {
+        border: 1px solid green;
+        float: right;
+      }
+      div.botonera input {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 2px 8px;
+        border: 1px solid black;
+      }
+
+      .menu-button {
+        display: inline-block;
+        border: 1px solid red;
+      }
+      .menu-button input {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 2px 8px;
+        border: 1px solid black;
+      }
+      .menu-button-right {
+        /*position: relative;*/
+        /*display: block;*/
+        float: right;
+        border: 1px solid blue;
+      }
+      .menu-button-right input {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 2px 8px;
+        border: 1px solid black;
+      }
+
+      .buttonBar {
+        float: left;
+        width: 100%;
+        border: 1px solid red;
+      }
+      .buttonBar .left {
+        float: left;
+      }
+      .buttonBar .right {
+        float: right;
+      }
+      .button {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 2px 8px;
+        border: 1px solid black;
+      }
+      .button:hover {
+        background-color: #eeeeee;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ejemplo 1 de Botonera</h2>
+    <div class="botonera">
+      <div class="botonera-left">
+        <input type="button" value="Volver" />
+      </div>
+      <div class="botonera-right">
+        <input type="button" value="Buscar" />
+        <input type="button" value="Nuevo" />
+      </div>
+    </div>
+
+    <h2>Ejemplo 2 de Botonera</h2>
+    <div style="border: 1px solid black">
+      <div class="menu-button">
+        <input type="button" value="Volver" />
+      </div>
+      <div class="menu-button-right">
+        <input type="button" value="Buscar" />
+        <input type="button" value="Nuevo" />
+      </div>
+    </div>
+
+    <h2>Ejemplo 3 de Botonera</h2>
+    <div class="buttonBar">
+      <div class="left">
+        <input type="submit" value="Button 1" class="button" />
+        <input type="submit" value="Button 2" class="button" />
+      </div>
+      <div class="right">
+        <input type="submit" value="Button 3" class="button" />
+      </div>
+    </div>
+  </body>
+</html>

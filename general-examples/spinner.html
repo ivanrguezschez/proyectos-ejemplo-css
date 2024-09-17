@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Ejemplo Spinner Proceso de Carga</title>
+    <style type="text/css">
+      .container {
+        margin: 0;
+        padding: 0;
+      }
+      .spinner,
+      .spinner::after {
+        display: block;
+        /*
+        width: 32px;
+        height: 32px;
+        */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .spinner {
+        background-color: transparent;
+        /*
+        border-top: 5px solid rgb(66, 139, 202);
+        border-right: 5px solid rgb(66, 139, 202);
+        border-bottom: 5px solid rgb(66, 139, 202);
+        border-left: 5px solid rgba(66, 139, 202, .2);
+        */
+        border-top: 10px solid rgb(66, 139, 202);
+        border-right: 10px solid rgb(66, 139, 202);
+        border-bottom: 10px solid rgb(66, 139, 202);
+        border-left: 10px solid rgba(66, 139, 202, 0.2);
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 0.8s;
+        animation-name: spinner-loading;
+      }
+      /* Definimos una transformación de rotación de 360 grados con una regla @keyframes */
+      @keyframes spinner-loading {
+        0% {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spinner Proceso de Carga</h1>
+      <p>Ejemplo de spinner que nos indica el proceso de carga</p>
+      <hr />
+
+      <div class="spinner"></div>
+    </div>
+  </body>
+</html>

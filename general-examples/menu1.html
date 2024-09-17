@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style type="text/css">
+      a {
+        text-decoration: none;
+      }
+      a:link {
+        color: #000000;
+        background-color: transparent;
+      }
+      a:visited {
+        color: #000000;
+        background-color: transparent;
+      }
+      a:active {
+        color: #000000;
+        background-color: transparent;
+      }
+      a:hover {
+        color: #0080c0;
+        background-color: transparent;
+      }
+      .Estilo5 {
+        padding-left: 4px;
+        font-family: "Trebuchet MS";
+        font-size: 12px;
+      }
+      .Estilo7 {
+        padding-left: 4px;
+        font-family: "Trebuchet MS";
+        font-size: 10px;
+        color: #eeeeee;
+        font-weight: bold;
+      }
+      .fila {
+        background: #cccccc;
+      }
+    </style>
+    <script language="javascript">
+      function mOver(obj) {
+        if (obj.style.background == "#cccccc") {
+          obj.style.background = "#ffffff";
+          obj.style.color = "#000000";
+          //eval(obj.id+"_1.style.color=\"#000000\"");
+        }
+      }
+      function mOut(obj) {
+        if (obj.style.background == "#ffffff") {
+          obj.style.background = "#cccccc";
+          obj.style.color = "#000000";
+          //eval(obj.id+"_1.style.color=\"#000000\"");
+        }
+      }
+      function mClic(obj) {
+        // Se recorren las opciones
+        for (var i = 1; i <= 5; i++) {
+          if (eval("opc" + i + "_1").style.background == "#ffffff") {
+            eval("opc" + i).style.background = "#cccccc";
+            //val("opc"+i+"_1").style.color="#000000";
+            eval("opc" + i + "_1").style.background = "#0080C0";
+          }
+        }
+        //obj.style.background="#666665";
+        //eval(obj.id+"_1.style.color=\"#FFFFFF\"");
+        eval(obj.id + '_1.style.background="#ffffff"');
+      }
+    </script>
+  </head>
+  <body>
+    <table width="150" border="0" cellspacing="1" cellpadding="">
+      <tr>
+        <td width="5" bgcolor="#0080C0">&nbsp;</td>
+        <td bgcolor="#0080C0"><span class="Estilo7">DOCUMENTOS</span></td>
+      </tr>
+      <tr>
+        <td id="opc1_1" width="5" bgcolor="#0080C0">&nbsp;</td>
+        <td
+          id="opc1"
+          style="background: #cccccc"
+          class="Estilo5"
+          onMouseOver="mOver(this)"
+          onMouseOut="mOut(this)"
+          onClick="mClic(this)"
+        >
+          <a href="#">Anexar</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td id="opc2_1" width="5" bgcolor="#0080C0">&nbsp;</td>
+        <td
+          id="opc2"
+          style="background: #cccccc"
+          class="Estilo5"
+          onMouseOver="mOver(this)"
+          onMouseOut="mOut(this)"
+          onClick="mClic(this)"
+        >
+          <a href="#">Consultar</a>
+        </td>
+      </tr>
+      <tr>
+        <td id="opc3_1" width="5" bgcolor="#0080C0">&nbsp;</td>
+        <td
+          id="opc3"
+          style="background: #cccccc"
+          class="Estilo5"
+          onMouseOver="mOver(this)"
+          onMouseOut="mOut(this)"
+          onClick="mClic(this)"
+        >
+          <a href="#">Descargar</a>
+        </td>
+      </tr>
+      <tr>
+        <td id="opc4_1" width="5" bgcolor="#0080C0">&nbsp;</td>
+        <td
+          id="opc4"
+          style="background: #cccccc"
+          class="Estilo5"
+          onMouseOver="mOver(this)"
+          onMouseOut="mOut(this)"
+          onClick="mClic(this)"
+        >
+          <a href="#">Eliminar</a>
+        </td>
+      </tr>
+      <tr>
+        <td id="opc5_1" width="5" bgcolor="#0080C0">&nbsp;</td>
+        <td
+          id="opc5"
+          style="background: #cccccc"
+          class="Estilo5"
+          onMouseOver="mOver(this)"
+          onMouseOut="mOut(this)"
+          onClick="mClic(this)"
+        >
+          <a href="#">Modificar</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listado</title>
+	<style type="text/css">
+		.tabla {
+			border: 1px solid #999999;
+		}
+		.txttablaheader {
+			font-family: "Trebuchet MS";
+			font-size: 12px;
+			font-weight: bold;
+			color: #000000;
+			padding-left: 3px;
+			padding-right: 3px;
+			background-color:#CCCCFF;
+			border: 1px solid #999999;
+		}
+		.txttabla {
+			font-family: "Trebuchet MS";
+			font-size: 12px;
+			padding-left: 2px;
+			padding-right: 2px;
+			border-left: 1px solid #999999;
+			border-right: 1px solid #999999;
+		}
+		.tabla2 {
+			border-bottom: 1px solid #999999;
+			border-left: 1px solid #999999;
+			font-family: "Trebuchet MS";
+		}
+		.tabla2header {
+			font-size: 12px;
+			font-weight: bold;
+			padding-left: 10px;
+			padding-right: 10px;
+			background-color:#CCCCFF;
+			border-top: 1px solid #999999;
+			border-bottom: 1px solid #999999;
+			border-right: 1px solid #999999;
+		}
+		.tabla2headercenter {
+			font-size: 12px;
+			font-weight: bold;
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+			background-color:#CCCCFF;
+			border-top: 1px solid #999999;
+			border-bottom: 1px solid #999999;
+			border-right: 1px solid #999999;
+		}
+		.tabla2filapar {
+			font-size: 12px;
+			padding-left: 2px;
+			padding-right: 2px;
+			border-right: 1px solid #999999;
+		}
+		.tabla2filaimpar {
+			font-size: 12px;
+			padding-left: 2px;
+			padding-right: 2px;
+			border-right: 1px solid #999999;
+			background-color: #EFEFFF;
+		}
+	</style>
+</head>
+<body>
+	<table width="450" border="0" cellpadding="0" cellspacing="0" class="tabla">
+		<tr>
+			<td width="218" class="txttablaheader">Periodo</td>
+		  	<td width="109" class="txttablaheader"><div align="right">Valor</div></td>
+		  	<td width="100" class="txttablaheader"><div align="right">Nivel de Carga </div></td>
+		</tr>
+		<tr>
+		  	<td class="txttabla">01-11-2004 00:00 &lt;-&gt; 01-11-2004 00:05</td>
+		  	<td class="txttabla"><div align="right">123.20</div></td>
+		  	<td class="txttabla"><div align="right">10</div></td>
+		</tr>
+		<tr bgcolor="#EEEEEE">
+		  	<td class="txttabla">01-11-2004 00:05 &lt;-&gt; 01-11-2004 00:10</td>
+		  	<td class="txttabla"><div align="right">34.00</div></td>
+		  	<td class="txttabla"><div align="right">5</div></td>
+		</tr>
+		<tr>
+		  	<td class="txttabla">01-11-2004 00:10 &lt;-&gt; 01-11-2004 00:15</td>
+		  	<td class="txttabla"><div align="right">196.49</div></td>
+		  	<td class="txttabla"><div align="right">34</div></td>
+		</tr>
+		<tr bgcolor="#EEEEEE">
+			<td class="txttabla">01-11-2004 00:15 &lt;-&gt; 01-11-2004 00:20</td>
+		  	<td class="txttabla"><div align="right">35.89</div></td>
+		  	<td class="txttabla"><div align="right">21</div></td>
+		</tr>
+	</table>
+  	<hr/>
+ 	<table border="0" cellpadding="0" cellspacing="0" class="tabla2">
+		<tr>
+			<td class="tabla2headercenter">Periodo</td>
+		  	<td class="tabla2headercenter">Valor</div></td>
+		  	<td class="tabla2headercenter">Nivel de Carga </div></td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filapar">01-11-2004 00:00 &lt;-&gt; 01-11-2004 00:05</td>
+		  	<td class="tabla2filapar"><div align="right">123.20</div></td>
+		  	<td class="tabla2filapar"><div align="right">10</div></td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filaimpar">01-11-2004 00:05 &lt;-&gt; 01-11-2004 00:10</td>
+		  	<td class="tabla2filaimpar"><div align="right">34.00</div></td>
+		  	<td class="tabla2filaimpar"><div align="right">5</div></td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filapar">01-11-2004 00:10 &lt;-&gt; 01-11-2004 00:15</td>
+		  	<td class="tabla2filapar"><div align="right">196.49</div></td>
+		  	<td class="tabla2filapar"><div align="right">34</div></td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filaimpar">01-11-2004 00:15 &lt;-&gt; 01-11-2004 00:20</td>
+		  	<td class="tabla2filaimpar"><div align="right">35.89</div></td>
+		  	<td class="tabla2filaimpar"><div align="right">21</div></td>
+		</tr>
+  	</table>
+  	<hr/>
+  	<table border="0" cellpadding="0" cellspacing="0" class="tabla2">
+		<tr>
+			<td class="tabla2header">Nombre</td>
+		  	<td class="tabla2header">Teléfono</div></td>
+		  	<td class="tabla2header">Email</div></td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filapar">Cristina Perez Garcia</td>
+		  	<td class="tabla2filapar">123-456-789</td>
+		  	<td class="tabla2filapar">cristinaperezgarcia@yahoo.com</td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filaimpar">Luis Bernardo Sagardia</td>
+		  	<td class="tabla2filaimpar">123-456-789</td>
+		  	<td class="tabla2filaimpar">luisbs@yahoo.com</td>
+		</tr>
+		<tr>
+		  	<td class="tabla2filapar">Juan Jimenez Garzón</td>
+		  	<td class="tabla2filapar">123-456-789</td>
+		  	<td class="tabla2filapar">jjg@gmail.com</td>
+		</tr>
+		<tr>
+			<td class="tabla2filaimpar">Maria Rodriguez Perez</td>
+		  	<td class="tabla2filaimpar">123-456-789</td>
+		  	<td class="tabla2filaimpar">mrperez@yahoo.com</td>
+		</tr>
+  	</table>	
+</body>
+</html>

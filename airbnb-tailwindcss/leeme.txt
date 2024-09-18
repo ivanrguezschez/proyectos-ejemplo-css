@@ -1,0 +1,30 @@
+TailwindCSS
+-----------
+Proyecto de ejemplo que simula hacer una página de AirBnB usando el framework CSS TailWindCSS
+
+https://tailwindcss.com/
+
+- Framework CSS.
+- Con un enfoque hacia las "utilidades" en lugar de componentes.
+- Responsive
+- Facil de personalizar
+- Compatible con Vue, Angular, Laravel, React
+- Se puede configurar vía Webpack, CLI, PostCSS o Gulp
+
+UTILIDADES
+- En Bootstrap se crea un botón con una sintaxis similar a la siguiente:
+    <button type="button" class="btn btn-danger">Eliminar &times;</button>
+- En tailwind se crea un boton con una sintaxis similar a la siguiente:
+    <button type="button" class="bg-red-900 font-bold text-sm uppercase py-3 px-8">Eliminar &times;</button>
+    Mezclas las diferentes utilidades y obtienes un resultado.
+- Hay clases para tamaños de fuentes, grueso, margen, padding, display, box-shadow y cada una se conoce como utilidad.
+
+Para instalarlas via npm   (Antes, previamente sobre la carpeta del proyecto $npm init para que nos cree el package.json)
+$npm install tailwindcss --save-dev 
+
+Compilar la hoja de estilos para generar una (npx es para no tener que instalar el paquete y utlizar siempre la última versión)
+$npx tailwind build app.css -o css/app.css   (app.css es la hoja de estilos que vamos a compilar)
+(Este comando no me funciona)
+
+En la documentacion viene este
+$npx tailwindcss-cli@latest build -o css/tailwind.css

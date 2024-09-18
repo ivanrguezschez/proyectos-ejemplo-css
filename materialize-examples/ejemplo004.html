@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initital-scale=1" />
+        <title>Ejemplo Materialize Barra de Navegacion</title>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/material-icons.css" />
+        <link type="text/css" rel="stylesheet" href="css/materialize-ejemplos.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="nav-wrapper light-blue darken-4">
+                        <a href="#" class="brand-logo brand-logo-organismo">
+                            <div style="width: 260px; background-color: #ccc;">
+                                LOGOTIPO
+                            </div>
+                        </a>
+                        <span class="brand-text-organismo">NOMBRE APLICACION</span>
+                        <!-- Dropdown Trigger -->
+                        <a class="brand-user-organismo right dropdown-trigger" href="#!" data-target="dropdown1">Nombre Apellido1 Apellido2 (ROL)<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content brand-user-menu-organismo">
+                            <li><a class="light-blue-text text-darken-4" href="#"><i class="material-icons">info_outline</i>Manual de Usuario</a></li>
+                            <li class="divider"></li>
+                            <li><a class="light-blue-text text-darken-4" href="ejemplo003.html"><i class="material-icons">power_settings_new</i>Salir</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav id="menu" class="grey">
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li>
+                                <a id="menuModulo1" class="dropdown-trigger" href="#!" data-target="dropdownMenuModulo1">Módulo 1<i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdownMenuModulo1" class="dropdown-content">
+                                    <li><a href="#" class="grey-text">Opción 1</a></li>
+                                    <li><a href="#" class="grey-text">Opción 2</a></li>                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="menuModulo2" class="dropdown-trigger" href="#!" data-target="dropdownMenuModulo2">Módulo 2<i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdownMenuModulo2" class="dropdown-content">
+                                    <li><a href="#" class="grey-text">Opción 1</a></li>
+                                    <li><a href="#" class="grey-text">Opción 2</a></li>                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="menuAdministracion" class="dropdown-trigger" href="#!" data-target="dropdownMenuAdministracion">Módulo 3<i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdownMenuAdministracion" class="dropdown-content">
+                                    <li><a href="ejemplo005.html" class="grey-text">Opción 1</a></li>
+                                    <li><a href="#" class="grey-text">Opción 2</a></li>                  
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="cover valign-wrapper">
+                    <div class=" row">
+                        <div class="col s12">
+                            <div class="card z-depth-0">
+                                <div class="card-content">
+                                    <span class="card-title light-blue-text text-darken-4">¡Bienvenidos!</span>
+                                    <div class="divider light-blue darken-4"></div>
+                                    <br/>
+                                    <p class="center-align">Esta es la versión web de la aplicación de <strong>Nombre Aplicación.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer white">
+            <div class="container">
+                <div class="footer-copyright footer-copyright-organismo light-blue darken-4">
+                    <span>Copyright © <script>document.write(new Date().getFullYear());</script> - Nombre del Organismo</span>
+                    <span class="right">
+                        <span class="green darken-2">ENTORNO DE DESARROLLO</span>
+                        <span>v.1.0.0</span>
+                    </span>
+                </div>
+            </div>                
+        </footer>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+            M.AutoInit();
+            $(document).ready(function() {
+                $('.dropdown-trigger').dropdown({coverTrigger: false});
+                //$(".dropdown-button").dropdown();
+                $('#menuModulo1').dropdown({coverTrigger: false});
+                $('#menuModulo2').dropdown({coverTrigger: false});
+                $('#menuAdministracion').dropdown({coverTrigger: false});
+            });
+        </script>
+    </body>
+</html>

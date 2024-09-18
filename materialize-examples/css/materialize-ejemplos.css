@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+.brand-logo-organismo img {
+    height: 64px !important;
+}
+.brand-logo-organismo div {
+    height: 64px !important;
+}
+.brand-text-organismo {
+    margin-left: 270px !important;
+}
+.brand-user-organismo {
+    font-size: 12px;
+}
+/*
+.brand-user-menu-organismo {
+    font-size: 12px;
+}
+*/
+.brand-user-menu-organismo li > a, .brand-user-menu-organismo li > span {
+    font-size: 12px;
+}
+.footer-copyright-organismo span {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.cover {
+    /*position: absolute; */
+    /*top: 45%; */
+    /*left:50%; */
+    /*transform: translate(-50%,-50%); */
+    height: 600px;
+}
+
+.collapsible li.active i {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #b3e5fc;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #b3e5fc;
+}

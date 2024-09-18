@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Materialize Tablas Ejemplo</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/material-icons.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Heading h1</h1>
+      <h2>Heading h2</h2>
+      <h3>Heading h3</h3>
+      <h4>Heading h4</h4>
+      <h5>Heading h5</h5>
+      <h6>Heading h6</h6>
+
+      <i class="material-icons">face</i>
+      <br />
+      <i class="material-icons md-18">face</i>
+      <br />
+      <i class="material-icons md-24">face</i>
+      <br />
+      <i class="material-icons md-36">face</i>
+      <br />
+      <i class="material-icons md-48">face</i>
+      <br />
+      <i class="material-icons md-dark">face</i>
+      <br />
+      <i class="material-icons md-dark md-inactive">face</i>
+      <br />
+      <div class="icons-preview icons-dark-bg">
+        <i class="material-icons md-light black">face</i>
+        <div class="icon-caption">Normal</div>
+      </div>
+      <br />
+      <div class="icons-preview icons-dark-bg">
+        <i class="material-icons md-light md-inactive">face</i>
+        <div class="icon-caption">Disabled</div>
+      </div>
+      <br />
+      <i class="material-icons orange600">face</i>
+
+      <div class="card-panel">
+        <span class="blue-text text-darken-2"
+          >This is a card panel with dark blue text</span
+        >
+        <br />
+        <span class="blue-text text-darken-4"
+          >This is a card panel with dark blue text</span
+        >
+      </div>
+
+      <!-- Dropdown Trigger -->
+      <a class="dropdown-trigger btn" href="#" data-target="dropdown1"
+        >Drop Me!</a
+      >
+
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!">three</a></li>
+        <li>
+          <a href="#!"><i class="material-icons">view_module</i>four</a>
+        </li>
+        <li>
+          <a href="#!"><i class="material-icons">cloud</i>five</a>
+        </li>
+      </ul>
+
+      <div class="row">
+        <div class="col s1">1</div>
+        <div class="col s1">2</div>
+        <div class="col s1">3</div>
+        <div class="col s1">4</div>
+        <div class="col s1">5</div>
+        <div class="col s1">6</div>
+        <div class="col s1">7</div>
+        <div class="col s1">8</div>
+        <div class="col s1">9</div>
+        <div class="col s1">10</div>
+        <div class="col s1">11</div>
+        <div class="col s1">12</div>
+      </div>
+
+      <h1>Collapsible Example</h1>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">filter_drama</i>First
+          </div>
+          <div class="collapsible-body">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">place</i>Second
+          </div>
+          <div class="collapsible-body">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">whatshot</i>Third
+          </div>
+          <div class="collapsible-body">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </li>
+      </ul>
+
+      <table class="striped responsive-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>1º Apellido</th>
+            <th>2º Apellido</th>
+            <th>Rol</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Otto</td>
+            <td>Administrador</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Otto</td>
+            <td>Administrador</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Otto</td>
+            <td>Administrador</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <ul class="pagination">
+                <li class="disabled">
+                  <a href="#!"><i class="material-icons">chevron_left</i></a>
+                </li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect">
+                  <a href="#!"><i class="material-icons">chevron_right</i></a>
+                </li>
+              </ul>
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      M.AutoInit();
+      $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+        $(".collapsible").collapsible();
+      });
+    </script>
+  </body>
+</html>

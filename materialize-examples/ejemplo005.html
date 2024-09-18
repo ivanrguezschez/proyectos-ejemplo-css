@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initital-scale=1" />
+        <title>Ejemplo Materialize Barra de Navegacion</title>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/material-icons.css" />
+        <link type="text/css" rel="stylesheet" href="css/materialize-ejemplos.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="nav-wrapper light-blue darken-4">
+                        <a href="#" class="brand-logo brand-logo-organismo">
+                            <div style="width: 260px; background-color: #ccc;">
+                                LOGOTIPO
+                            </div>
+                        </a>
+                        <span class="brand-text-organismo">NOMBRE APLICACION</span>
+                        <!-- Dropdown Trigger -->
+                        <a class="brand-user-organismo right dropdown-trigger" href="#!" data-target="dropdown1">Nombre Apellido1 Apellido2 (ROL)<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content brand-user-menu-organismo">
+                            <li><a class="light-blue-text text-darken-4" href="#"><i class="material-icons">info_outline</i>Manual de Usuario</a></li>
+                            <li class="divider"></li>
+                            <li><a class="light-blue-text text-darken-4" href="ejemplo003.html"><i class="material-icons">power_settings_new</i>Salir</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav id="menu" class="grey">
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li>
+                                <a id="menuModulo1" class="dropdown-trigger" href="#!" data-target="dropdownMenuModulo1">Módulo 1<i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdownMenuModulo1" class="dropdown-content">
+                                    <li><a href="#" class="grey-text">Opción 1</a></li>
+                                    <li><a href="#" class="grey-text">Opción 2</a></li>                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="menuModulo2" class="dropdown-trigger" href="#!" data-target="dropdownMenuModulo2">Módulo 2<i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdownMenuModulo2" class="dropdown-content">
+                                    <li><a href="#" class="grey-text">Opción 1</a></li>
+                                    <li><a href="#" class="grey-text">Opción 2</a></li>                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="menuAdministracion" class="dropdown-trigger" href="#!" data-target="dropdownMenuAdministracion">Módulo 3<i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdownMenuAdministracion" class="dropdown-content">
+                                    <li><a href="#" class="grey-text">Opción 1</a></li>
+                                    <li><a href="#" class="grey-text">Opción 2</a></li>                  
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav>
+                    <div class="nav-wrapper z-depth-0 grey lighten-2">
+                    <div class="col s12">
+                        <a href="#!" class="breadcrumb black-text"><i class="material-icons">home</i></a>
+                        <a href="#!" class="breadcrumb black-text">Módulo 3</a>
+                        <a href="#!" class="breadcrumb black-text">Opción 1</a>
+                    </div>
+                    </div>
+                </nav>
+                <!--
+                <h5 style="border: 1px solid black;">MÓDULO 3 OPCIÓN 1</h5>
+                -->
+                <!--
+                <h5>MÓDULO 3 OPCIÓN 1<span class="right"><a class="waves-effect grey btn"><i class="material-icons left">add</i>Nuevo</a></span></h5>
+                -->
+                
+                <div class="row valign-wrapper">
+                    <div class="col s9">
+                        <h5>MÓDULO 3 OPCIÓN 1</h5>
+                    </div>
+                    <div class="col s3">
+                        <a class="waves-effect grey btn-small right"><i class="material-icons left">add</i>Nuevo</a>
+                    </div>
+                </div>
+                
+                
+                <ul class="collapsible">
+                    <li class="active">
+                        <div class="collapsible-header light-blue lighten-4"><i class="material-icons">chevron_right</i>Criterios de Búsqueda</div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <input type="text" id="nif">
+                                        <label for="nif">NIF</label>
+                                    </div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <input type="text" id="nombre">
+                                        <label for="nombre">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <input type="text" id="apellido1">
+                                        <label for="nif">1º Apellido</label>
+                                    </div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <input type="text" id="apellido2">
+                                        <label for="nombre">2º Apellido</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <select id="rol">
+                                            <option value="">Seleccione...</option>
+                                            <option value="1">Rol 1</option>
+                                            <option value="2">Rol 2</option>
+                                            <option value="3">Rol 3</option>
+                                        </select>
+                                        <label>Rol</label>
+                                    </div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <input type="text" id="fechaAltaDesde" class="datepicker">
+                                        <label for="fechaAltaDesde">Fecha de Alta Desde</label>
+                                    </div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <input type="text" id="fechaAltaHasta" class="datepicker">
+                                        <label for="fechaAltaHasta">Fecha de Alta Hasta</label>
+                                    </div>
+                                </div>
+                                <div class="col s3">
+                                    <div class="input-field">
+                                        <!--
+                                        <label>
+                                            <input type="checkbox" class="filled-in light-blue lighten-4" />
+                                            <span>Usuarios dados de baja</span>
+                                        </label>
+                                        -->                                
+                                        <span>Usuarios dados de baja</span>
+                                        <div class="switch">
+                                            <label>
+                                                No
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Si
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 ">
+                                    <a class="waves-effect grey btn-small right"><i class="material-icons left">search</i>Buscar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                 <ul class="collapsible">
+                    <li class="active">
+                        <div class="collapsible-header light-blue lighten-4"><i class="material-icons">chevron_right</i>Resultado de la Búsqueda</div>
+                        <div class="collapsible-body">
+                            <table class="striped bordered">
+                                <thead class="grey">
+                                    <tr>
+                                        <th>NIF</th>
+                                        <th>Nombre</th>
+                                        <th>1º Apellido</th>
+                                        <th>2º Apellido</th>
+                                        <th>Rol</th>
+                                        <th>F. Alta</th>
+                                        <th>F. Modificación</th>
+                                        <th>F. Baja</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01234567</td>
+                                        <td>Nombre-01</td>
+                                        <td>Apellido1-01</td>
+                                        <td>Apellido2-01</td>
+                                        <td>Rol 1</td>
+                                        <td>01/01/2018</td>
+                                        <td>01/01/2018</td>
+                                        <td>&nbsp;</td>
+                                        <td class="center-align">
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">edit</i></a>
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">delete</i></a>
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">visibility</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>01234567</td>
+                                        <td>Nombre-02</td>
+                                        <td>Apellido1-02</td>
+                                        <td>Apellido2-02</td>
+                                        <td>Rol 1</td>
+                                        <td>01/01/2018</td>
+                                        <td>01/01/2018</td>
+                                        <td>&nbsp;</td>
+                                        <td class="center-align">
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">edit</i></a>
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">delete</i></a>
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">visibility</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>01234567</td>
+                                        <td>Nombre-03</td>
+                                        <td>Apellido1-03</td>
+                                        <td>Apellido2-03</td>
+                                        <td>Rol 1</td>
+                                        <td>01/01/2018</td>
+                                        <td>01/01/2018</td>
+                                        <td>&nbsp;</td>
+                                        <td class="center-align">
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">edit</i></a>
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">delete</i></a>
+                                            <a class="waves-effect grey btn-small"><i class="material-icons">visibility</i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th colspan="9">
+                                            <ul class="pagination">
+                                                <li class="disabled"><a href="#!"><span class="material-icons">chevron_left</span></a></li>
+                                                <li class="active"><a href="#!">1</a></li>
+                                                <li class="waves-effect"><a href="#!">2</a></li>
+                                                <li class="waves-effect"><a href="#!">3</a></li>
+                                                <li class="waves-effect"><a href="#!">4</a></li>
+                                                <li class="waves-effect"><a href="#!">5</a></li>
+                                                <li class="waves-effect"><a href="#!"><span class="material-icons">chevron_right</span></a></li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="page-footer white">
+            <div class="container">
+                <div class="footer-copyright footer-copyright-organismo light-blue darken-4">
+                    <span>Copyright © <script>document.write(new Date().getFullYear());</script> - Nombre del Organismo</span>
+                    <span class="right">
+                        <span class="green darken-2">ENTORNO DE DESARROLLO</span>
+                        <span>v.1.0.0</span>
+                    </span>
+                </div>
+            </div>                
+        </footer>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+            M.AutoInit();
+            $(document).ready(function() {
+                $('.dropdown-trigger').dropdown({coverTrigger: false});
+                //$(".dropdown-button").dropdown();
+                $('#menuModulo1').dropdown({coverTrigger: false});
+                $('#menuModulo2').dropdown({coverTrigger: false});
+                $('#menuAdministracion').dropdown({coverTrigger: false});
+
+                $('.collapsible').collapsible();
+                $('.datepicker').datepicker({ 
+                    format: 'dd/mm/yyyy', 
+                    i18n: { 
+                        months: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'] 
+                    } 
+                });
+
+            });
+        </script>
+    </body>
+</html>

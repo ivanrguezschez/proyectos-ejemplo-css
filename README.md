@@ -22,6 +22,9 @@ Proyecto de ejemplos generales, emplea html y css.
 ## grid-example
 Proyecto de ejemplos de display grid.
 
+## materialize-examples
+Proyecto de ejemplos del framework css materialize.
+
 ## notifications-page
 Proyecto de Frontend Mentor de una página de notificaciones, emplea html y css.
 

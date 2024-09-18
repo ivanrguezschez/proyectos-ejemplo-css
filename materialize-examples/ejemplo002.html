@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Materialize Barra de Navigación Ejemplo</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/material-icons.css" />
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+
+      .navbar-organismo {
+        padding: 0px !important;
+        height: 73px !important;
+        /*line-height: 72px !important; */
+      }
+      .navbar-brand-logo {
+        padding: 0px !important;
+        margin: 0px !important;
+      }
+      .navbar-brand-text {
+        /*line-height: 72px !important; */
+        padding: 0px !important;
+        margin: 0px !important;
+        /*text-align: center;*/
+        /*background-color: aliceblue;*/
+
+        border: 1px solid red;
+        height: 73px !important;
+        line-height: 72px !important;
+      }
+      .brand-logo-organismo img {
+        height: 64px !important;
+      }
+      .brand-logo-organismo div {
+        height: 64px !important;
+      }
+      .brand-text-organismo {
+        margin-left: 270px !important;
+      }
+      .footer-copyright {
+        padding: 0px !important;
+        margin: 0px !important;
+      }
+      .footer-copyright-organismo span {
+        padding: 0px 10px;
+      }
+
+      .cover {
+        /*position: absolute; */
+        /*top: 45%; */
+        /*left:50%; */
+        /*transform: translate(-50%,-50%); */
+        height: 600px;
+      }
+      .cover p {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        <div class="container">
+    -->
+    <!--
+        <nav>
+            <div class="nav-wrapper navbar-organismo light-blue darken-4">
+                <img class=navbar-brand-logo" src="#"/>
+    -->
+    <!--<div class="nav-title navbar-brand-text-organismo center">nombre app</div>-->
+    <!--<span class="nav-title navbar-brand-text-organismo">NOMBRE APLICACION</span>-->
+    <!--<span class="navbar-brand-text-organismo">NOMBRE APLICACION</span>-->
+    <!--
+                <div class="nav-title" style="border: 1px solid red; margin-top: -20px;">
+                    <h6>NOMBRE APLICACION</h6>
+                </div>
+            </div>
+        </nav>
+    -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-wrapper light-blue darken-4">
+            <a href="#" class="brand-logo brand-logo-organismo">
+                <!--<img src="#" width="260px" height="72px" style="background-color: #ccc;" />-->
+                <div style="width: 260px; background-color: #ccc;">
+                    LOGOTIPO
+                </div>
+            </a>
+            <span class="brand-text-organismo">NOMBRE APLICACION</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--
+            <div class="valign-wrapper">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Login</span>
+                        <p>Acceso de los usuarios a la aplicación. Seleccione la forma con la cual desea Identificarse en el sistema.</p>
+                        <div class="row">
+                            <div class="col s6 center-align">
+                                <div class="section">
+                                    <p>Acceder con certificado</p>
+                                    <br/>
+                                    <div class="divider"></div>
+                                    <br/>
+                                    <a id="buttonEntrarCertificado" class="btn light-blue darken-3"><i class="material-icons left">exit_to_app</i>Certificado Digital</a>
+                                </div>
+                            </div>
+                            <div class="col s6 center-align">
+                                <div class="section">
+                                    <p>Acceder con usuario y contraseña</p>
+                                    <br/>
+                                    <div class="divider"></div>
+                                    <br/>
+                                    <a id="buttonEntrarAutenticacionCentral" class="btn light-blue darken-3"><i class="material-icons left">exit_to_app</i>Usuario / Contraseña</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s8 offset-s2">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Login</span>
+                <div class="divider"></div>
+                <br />
+                <p class="center-align">
+                  Acceso de los usuarios a la aplicación. Seleccione la forma
+                  con la cual desea Identificarse en el sistema.
+                </p>
+                <br />
+                <div class="row">
+                  <div class="col s6 center-align">
+                    <p>Acceder con certificado</p>
+                    <br />
+                    <div class="divider"></div>
+                    <br />
+                    <a
+                      id="buttonEntrarCertificado"
+                      class="btn light-blue darken-3"
+                      ><i class="material-icons left">exit_to_app</i>Certificado
+                      Digital</a
+                    >
+                  </div>
+                  <div class="col s6 center-align">
+                    <p>Acceder con usuario y contraseña</p>
+                    <br />
+                    <div class="divider"></div>
+                    <br />
+                    <a
+                      id="buttonEntrarAutenticacionCentral"
+                      class="btn light-blue darken-3"
+                      ><i class="material-icons left">exit_to_app</i
+                      >Usuario / Contraseña</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer light-blue darken-4">
+      <div class="container">
+        <div class="footer-copyright footer-copyright-organismo">
+          <span
+            >Copyright ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            - Nombre del Organismo</span
+          >
+          <span class="right">ENTORNO DE DESARROLLO v.1.0.0</span>
+        </div>
+      </div>
+    </footer>
+    <!--</div> -->
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

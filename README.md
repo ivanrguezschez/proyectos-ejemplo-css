@@ -13,6 +13,9 @@ Proyecto de ejemplos del framework css blueprint.
 ## bulma-example
 Proyecto de ejemplo del framework css bulma.
 
+## dialog-example
+Proyecto de ejemplo del elemento HTML "dialog" para diálogos modales.
+
 ## flex-example
 Proyecto de ejemplos de display flex.
 
